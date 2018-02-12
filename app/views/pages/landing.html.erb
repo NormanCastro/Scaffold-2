@@ -1,0 +1,14 @@
+<h1>Estudiantes Listados</h1>
+
+<table class="table table-dark">
+<thead>
+
+<% @students.each do |student| %>
+	<tr>
+	<th>
+	<%= student.name %> <%= student.age %> <%= student.email %>		
+	</th>
+	</tr>
+<% end  %>
+</thead>
+</table>
